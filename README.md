@@ -44,9 +44,7 @@ confluence-web-app/
 │ └── pages/
 └── README.md
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -61,19 +59,22 @@ python -m venv .venv
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
+
 🌐 Frontend Setup
-bash
-Copy
-Edit
 cd frontend
 npm install
 npm start
+
+
 🔗 API Endpoints
-Method	Endpoint	Description
-POST	/api/register/	Register a new user
-POST	/api/login/	User login (returns JWT)
-GET	/api/documents/	Get all user-created documents
-POST	/api/documents/	Create a new document
-GET	/api/shared/	View documents shared with user
-PUT	/api/documents/:id/	Update document
-DELETE	/api/documents/:id/	Delete document
+| Method | Endpoint              | Description                     |
+| ------ | --------------------- | ------------------------------- |
+| POST   | `/api/register/`      | Register a new user             |
+| POST   | `/api/login/`         | User login (returns JWT)        |
+| GET    | `/api/documents/`     | Get all user-created documents  |
+| POST   | `/api/documents/`     | Create a new document           |
+| GET    | `/api/shared/`        | View documents shared with user |
+| PUT    | `/api/documents/:id/` | Update document                 |
+| DELETE | `/api/documents/:id/` | Delete document                 |
+
+
